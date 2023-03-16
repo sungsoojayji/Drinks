@@ -1,0 +1,15 @@
+D:\.NET Project\Practice\Drink\Drink\bin\Debug\net6.0\Drink.exe
+D:\.NET Project\Practice\Drink\Drink\bin\Debug\net6.0\Drink.deps.json
+D:\.NET Project\Practice\Drink\Drink\bin\Debug\net6.0\Drink.runtimeconfig.json
+D:\.NET Project\Practice\Drink\Drink\bin\Debug\net6.0\Drink.dll
+D:\.NET Project\Practice\Drink\Drink\bin\Debug\net6.0\Drink.pdb
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.csproj.AssemblyReference.cache
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.AssemblyInfoInputs.cache
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.AssemblyInfo.cs
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.csproj.CoreCompileInputs.cache
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.dll
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\refint\Drink.dll
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.pdb
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\Drink.genruntimeconfig.cache
+D:\.NET Project\Practice\Drink\Drink\obj\Debug\net6.0\ref\Drink.dll
