@@ -8,7 +8,7 @@ using System.Xml.Linq;
 namespace Drinks
 {   
     // Base Class
-    public abstract class Drink
+    public class Drink
     {
         public string DrinkName { get; set; }
         public bool IsCarbonated { get; set; }
