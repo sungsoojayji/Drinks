@@ -7,11 +7,20 @@ using System.Xml.Linq;
 
 namespace Drinks
 {   
+
+    public interface IJuice
+    { public string Fruit { get; set; } }
+
+    public interface IAlcohol
+    {
+        public bool IsNonAlcohol { get; set; }
+    }
+
     // Base Class
-    public class Drink
+    public class Drink 
     {
         public string DrinkName { get; set; }
-        public bool IsCarbonated { get; set; }
+        public bool IsCarbonated { get; set; }        
 
         public virtual string Description()
         {
@@ -20,9 +29,11 @@ namespace Drinks
     }
 
     // Derived Classes: Juice, Beer, Soda
-    public class Juice : Drink
+    public class Juice : Drink, IJuice, IAlcohol
     {
         public string Fruit { get; set; }
+        public bool IsNonAlcohol { get; set; }
+        //public string IJuice.FruitName { get; set; }
 
         public override string Description()
         {
@@ -31,9 +42,10 @@ namespace Drinks
 
     }
 
-    public class Beer : Drink
+    public class Alcohol : Drink
     {
         public double AlcoholContent { get; set; }
+        //public bool IsNonAlcohol { get; set; }
 
         public override string Description()
         {
@@ -41,11 +53,39 @@ namespace Drinks
         }        
     }
 
-    public class Soda : Drink
+    public class Soda : Drink, IAlcohol
     {
+        public bool IsNonAlcohol { get; set; }
+
         public override string Description()
         {
-            return $"{base.Description()}";            
+            return $"{base.Description()}, {(IsNonAlcohol ? "Non-Alcohol" : "Alcohol")}";            
+        }
+    }
+
+    public class Wine : Alcohol, IJuice, IAlcohol 
+    {
+        public string wineType { get; set; }
+                
+        public string Fruit { get; set; }
+
+        public bool IsNonAlcohol { get; set; }
+
+
+        public override string Description()
+        {
+            return $"{base.Description()}, {wineType}, made from {Fruit}, {(IsNonAlcohol ? "Non-Alcohol" : "Alcohol")}";
+        }
+    }
+
+    public class Beer : Alcohol, IAlcohol
+    {
+        public string beerType { get; set; }
+        public bool IsNonAlcohol { get; set; }
+
+        public override string Description()
+        {
+            return $"{base.Description()}, {beerType}, {(IsNonAlcohol ? "Non-Alcohol" : "Alcohol")}";
         }
     }
 }
